@@ -1,0 +1,53 @@
+.about-us-section {
+    padding: 50px;
+    background-color: #eef2f5;
+    font-family: Arial, sans-serif;
+}
+
+.about-us-section h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-us-section p {
+    text-align: justify;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.about-details,
+.about-values,
+.about-team,
+.about-contact {
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+ul {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+ul li {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.about-contact a{
+    color: #007bff;
+    text-decoration: none;
+}
+
+.about-contact a:hover {
+    text-decoration: underline;
+}

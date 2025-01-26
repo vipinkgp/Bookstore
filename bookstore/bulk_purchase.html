@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bulk Purchase - Space Store</title>
+  <link rel="stylesheet" href="all.css">
+  <link rel="stylesheet" href="bulk.css">
+
+</head>
+
+<body>
+
+  <nav class="navContainer">
+    <div class="navbar">
+      <div class="logo"><a href="#"><img src="booklogo.webp" alt="Space Store"></a></div>
+      <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="bulk_purchase.html">Bulk Purchase</a></li>
+        <li><a href="about_us.html">About Us</a></li>
+        <li><a href="return_policies.html">Return Policies</a></li>
+        <li><a href="contact_us.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section id="bulk-purchase" class="bulk-purchase-section">
+    <div class="container">
+      <h1>Bulk Purchase Inquiry</h1>
+      <p>Fill out the form below for bulk purchase inquiries, and our team will get in touch with you shortly.</p>
+      
+      <form id="bulkPurchaseForm" action="#" method="post">
+        <!-- Customer Details -->
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email address" required />
+        </div>
+        
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required />
+        </div>
+        
+        <!-- Order Details -->
+        <div class="form-group">
+          <label for="bookTitle">Book Title(s)</label>
+          <textarea id="bookTitle" name="bookTitle" placeholder="List the book titles you'd like to purchase" rows="3" required></textarea>
+        </div>
+        
+        <div class="form-group">
+          <label for="quantity">Approximate Quantity</label>
+          <input type="number" id="quantity" name="quantity" placeholder="Enter the quantity" min="1" required />
+        </div>
+        
+        <div class="form-group">
+          <label for="deadline">Expected Delivery Date</label>
+          <input type="date" id="deadline" name="deadline" required />
+        </div>
+        
+        <div class="form-group">
+          <label for="comments">Additional Comments</label>
+          <textarea id="comments" name="comments" placeholder="Add any specific requests or details" rows="3"></textarea>
+        </div>
+        
+        <!-- Submit Button -->
+        <div class="form-group">
+          <button type="submit" class="submit-button">Submit Inquiry</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  
+
+  <footer>
+    <div class="social-media">
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
+    </div>
+    <div class="contact-info">
+      <p>Email: vraj62023@gmail.com</p>
+      <p>Phone: +91 6202355891</p>
+    </div>
+    <div class="subscription-form">
+      <h3>Subscribe for Updates</h3>
+      <input type="email" placeholder="Enter your email">
+      <button>Subscribe</button>
+    </div>
+  </footer>
+
+</body>
+
+</html>

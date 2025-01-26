@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(135deg, #0c1f40, #c8a258, #ffdd99);
+    overflow-x:hidden;
+}
+
+/* navbar */
+
+.navbar {
+    background: linear-gradient(135deg, #0c1f40, #ffdd99);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    padding: 10px;
+}
+
+@media (max-width:768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    margin: 0;
+    padding: 0;
+    height: 10vh;
+    width: auto;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media(max-width:768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .logo img {
+        height: 6vh;
+        /* Smaller logo on medium screens */
+    }
+}
+
+@media(max-width:480px) {
+    .navbar ul {
+        gap: 10px;
+    }
+
+    .logo img {
+        height: 5vh;
+        /* Smaller logo on small screens */
+    }
+}
+
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .navbar ul li {
+        margin: 5px 0;
+        /* Reduce margin for stacked items */
+        padding: 5px;
+        /* Reduce padding for mobile-friendly design */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar ul li {
+        margin: 5px 0;
+        padding: 5px;
+    }
+}
+
+ a{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    font-family: sans-serif;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+a:hover{
+    transform:scale(1.5);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    background-color: #817e78;
+    border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+    a {
+        font-size: medium;
+        /* Smaller font size for tablets and below */
+    }
+}
+
+@media (max-width: 480px) {
+    a {
+        font-size: small;
+        /* Even smaller font size for small devices */
+    }
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+footer .social-media a:hover{
+    border:2px solid #026d22;
+   background-color: rgb(17, 160, 81);
+   border-radius: 10px;
+}
+
+footer .contact-info {
+    margin-top: 20px;
+}
+
+footer .subscription-form input {
+    padding: 10px;
+    margin-right: 10px;
+    width: 200px;
+}
+
+footer .subscription-form button {
+    background-color: #ff6600;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
